@@ -1,0 +1,16 @@
+/* Navbar! */
+
+#navbar {
+  height: 75px;
+  width: 100vw;
+  background-color: black;
+}
+
+#home-background {
+  width: 100%;
+  height: 800px;
+  background-image: url('assets/homephoto-crop.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
