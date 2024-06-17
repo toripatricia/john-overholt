@@ -1,16 +1,166 @@
 /* Navbar! */
 
 #navbar {
-  height: 75px;
+  height: 100px;
   width: 100vw;
   background-color: black;
 }
 
-#home-background {
+#nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#logo-pic {
+  height: 100px;
+}
+
+/* Home! */
+
+#home {
   width: 100%;
   height: 800px;
   background-image: url('assets/homephoto-crop.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#title h1 {
+  font-size: 100px;
+  color: #DED9CE;
+  padding-left: 50px;
+  padding-top: 50px;;
+  
+}
+
+#subtitle h3 {
+  font-size: 50px;
+  color: #DED9CE;
+  padding-left: 200px;
+}
+
+#quote-block {
+  height: 200px;
+  width: 700px;
+  background-color: #7D3A22;
+  opacity: 0.5;
+}
+
+#up-next-block {
+  height: 300px;
+  width: 700px;
+  background-color: #223260;
+  opacity: 0.5;
+  margin-top: 25px;
+}
+
+/* Resume block! */
+
+#resume-block {
+  height: 400px;
+  width: 100%;
+  background-color: #032107;
+}
+
+#image-container {
+  width: 350px; /* Set a fixed width for the container */
+  height: 350px; /* Set a fixed height for the container */
+  overflow: hidden; /* Ensure the image does not overflow the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#john-one {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+#block-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 25px;
+}
+
+#resume-button {
+  height: 50px;
+  width: 200px;
+  background-color: #732B05;
+  color: #DED9CE;
+}
+
+/* Biography! */
+
+#biography {
+  width: 100%;
+  height: 800px;
+  background-image: url('assets/falstaff1.jpg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+#bio-block {
+  height: 700px;
+  width: 700px;
+  background-color: #381A53;
+  opacity: 0.5;
+}
+
+/* Schedule! */
+
+#schedule {
+  width: 100%;
+  height: 800px;
+  background-color: #0f1939;
+}
+
+/* Quote block */
+
+#quote-block-two {
+  height: 400px;
+  width: 100%;
+  background-color: #732B05;
+}
+
+/* Media */
+
+#media {
+  width: 100%;
+  height: 800px;
+  background-image: url('assets/latrav1.jpg');
+}
+
+/* Press */
+
+#press { 
+  height: 400px;
+  width: 100%;
+  background-color: #032107;
+}
+
+
+/* Gallery */
+
+#gallery {
+  width: 100%;
+  height: 800px;
+  background-color: #732B05;
+}
+
+/* Contact */
+
+#contact {
+  width: 100%;
+  height: 800px;
+  background-color: #341846;
 }
