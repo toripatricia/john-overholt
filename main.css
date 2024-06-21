@@ -43,10 +43,32 @@
 }
 
 #quote-block {
-  height: 200px;
+  height: 150px;
   width: 700px;
   background-color: #7D3A22;
   opacity: 0.5;
+  margin-bottom: 25px;
+}
+
+#quote-container {
+  height: 100px;
+  width: 500px;
+  padding-left: 200px;
+  padding-top: 25px;
+}
+
+#quote-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#quote {
+  color: #DED9CE;
+  padding-bottom: 10px; 
+}
+
+#source {
+  color: #DED9CE;
 }
 
 #up-next-block {
@@ -54,7 +76,27 @@
   width: 700px;
   background-color: #223260;
   opacity: 0.5;
-  margin-top: 25px;
+  margin-top: 15px;
+}
+
+#up-next {
+  color: #DED9CE;
+  margin-left: 15px;
+}
+
+#up-next-contents {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+#left-side {
+  padding-left: 10px;
+  color: #DED9CE;
+}
+
+.caption {
+  color: #DED9CE;
 }
 
 /* Resume block! */
@@ -65,10 +107,10 @@
   background-color: #032107;
 }
 
-#image-container {
-  width: 350px; /* Set a fixed width for the container */
-  height: 350px; /* Set a fixed height for the container */
-  overflow: hidden; /* Ensure the image does not overflow the container */
+#headshot-container {
+  width: 350px; 
+  height: 350px; 
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,6 +156,9 @@
   width: 700px;
   background-color: #381A53;
   opacity: 0.5;
+  color: #DED9CE;
+
+  
 }
 
 /* Schedule! */
@@ -127,9 +172,32 @@
 /* Quote block */
 
 #quote-block-two {
+  display: flex;
+  flex-direction: row;
   height: 400px;
   width: 100%;
   background-color: #732B05;
+  padding: 25px;
+}
+
+#quote-image-container {
+  width: 500px; 
+  height: 350px; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+#quote-image {
+  width: 100%;
+  height: 100%;
+}
+
+#quote-wrapper {
+  margin-left: 200px;
+  color: #DED9CE;
 }
 
 /* Media */
@@ -138,6 +206,28 @@
   width: 100%;
   height: 800px;
   background-image: url('assets/latrav1.jpg');
+}
+
+#media-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px;
+}
+
+#media-block {
+  display: flex;
+  justify-content: flex-end;
+  height: 700px;
+  width: 700px;
+  background-color: #17253F;
+  opacity: 0.5;
+}
+
+#media-block h1 {
+  padding-top: 25px;
+  padding-right: 275px;
+  color: #DED9CE;
+
 }
 
 /* Press */
@@ -157,10 +247,72 @@
   background-color: #732B05;
 }
 
+/* #carousel-box {
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  width: 1000px;
+  background-color: #17253F;
+  opacity: 0.5;
+} */
+
+#carousel-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+#carousel {
+  width: 800px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  max-width: 100%; /* Ensures images do not exceed container width */
+  max-height: 100%; /* Ensures images do not exceed container height */
+  width: auto;
+  height: auto;
+}
+
+#gallery-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+/* Other Ventures */
+
+#other-ventures {
+  width: 100%;
+  height: 800px;
+  background-color: #0f1939;
+}
+
 /* Contact */
 
 #contact {
   width: 100%;
   height: 800px;
   background-color: #341846;
+}
+
+#contact-me {
+  color: #DED9CE;
+
+}
+
+#contact-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 200px;
+}
+
+#contact-form {
+  width: 500px;
 }
