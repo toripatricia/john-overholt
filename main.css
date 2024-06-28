@@ -169,6 +169,39 @@
   background-color: #0f1939;
 }
 
+#schedule-title h1 {
+  display: flex;
+  justify-content: center;
+  color: #DED9CE;
+  padding: 25px;
+}
+
+#schedule-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card-deck {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  height: 420px;
+  width: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card-photo {
+  height: 200px;
+  width: 275px;
+  object-fit: cover; 
+  display: block;
+}
+
 /* Quote block */
 
 #quote-block-two {
@@ -307,12 +340,15 @@
 
 #contact-page {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 200px;
+  padding: 100px;
 }
 
-#contact-form {
-  width: 500px;
+#contact-block {
+  height: 350px;
+  width: 350px;
+  background-color: #7D3A22;
+  opacity: 0.5;
 }
