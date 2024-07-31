@@ -12,6 +12,13 @@
 
   <link rel="stylesheet" href="main.css">
 
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Viaoda+Libre&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,21 +28,35 @@
   <div id="navbar">
 
     <div id="nav-items">
-      <a href="#">
+      <a href="#biography" class="nav-link">
         <div id="bio-link">BIOGRAPHY</div>
       </a>
-      <div id="schedule-link">SCHEDULE</div>
-      <div id="gallery-link">GALLERY</div>
-      <div id="logo"> <img id="logo-pic" src="assets/OVERHOLTlogo.png"> </div>
-      <div id="media-link">MEDIA</div>
-      <div id="other-ventures-link" class="dropdown">
-        OTHER VENTURES
-        <div class="dropdown-content">
-          <a href="#voiceover">VOICEOVER</a>
-          <a href="#gospel">GOSPEL</a>
+
+      <a href="#schedule" class="nav-link">
+        <div id="schedule-link">SCHEDULE</div>
+      </a>
+
+      <a href="#gallery" class="nav-link">
+        <div id="gallery-link">GALLERY</div>
+      </a>
+
+      <a href="#">
+        <div id="logo"> <img id="logo-pic" src="assets/OVERHOLTlogo.png"> </div>
+      </a>
+
+      <a href="#media" class="nav-link">
+        <div id="media-link">MEDIA</div>
+      </a>
+
+      <a href="#voiceover" class="nav-link">
+        <div id="voiceover-link">
+          VOICEOVER
         </div>
-      </div>
-      <div id="contact-link">CONTACT</div>
+      </a>
+
+      <a href="#contact" class="nav-link">
+        <div id="contact-link">CONTACT</div>
+      </a>
 
     </div>
 
@@ -57,8 +78,8 @@
       <div id="quote-container">
         <div id="quote-content">
           <div id="quote">
-            "...Alfredo’s friend, Gastone de Letoriéres, was given a major presence by tenor
-            John Overholt..."
+            <h5>"...Alfredo’s friend, Gastone de Letoriéres, was given a major presence by tenor
+              John Overholt..."</h5>
           </div>
 
           <div id="source">Alan Sherrod, Arts Knoxville</div>
@@ -98,7 +119,11 @@
         <img id="john-one" src="/assets/john1.jpg">
       </div>
 
-      <button id="resume-button">Download Resume</button>
+      <a href="https://drive.google.com/file/d/1hwob3j4vpiOvmyQT4Af2JW_axU7RWAuD/view?usp=sharing" id="resume-button"
+        download="john-overholt-resume.pdf" target="_blank">
+        <button id="resume-button">DOWNLOAD RESUME</button>
+      </a>
+
     </div>
   </div>
 
@@ -178,11 +203,13 @@
     <div id="gallery-title">
       <h1>GALLERY</h1>
     </div>
+    
     <div id="carousel-box">
       <div id="carousel-container">
         <div id="carousel">
           <div class="bd-example">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+
               <ol class="carousel-indicators">
                 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
                 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
@@ -206,6 +233,7 @@
                 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="19"></li>
                 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="20"></li>
                 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="21"></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="22"></li>
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -420,13 +448,9 @@
     </div>
   </div>
 
-  <!-- In the press -->
-
-  <div id="press"></div>
-
   <!-- Other Ventures -->
 
-  <div id="other-ventures"></div>
+  <div id="voiceover"></div>
 
 
   <!-- Contact -->
