@@ -16,6 +16,7 @@
   align-items: center;
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
+  font-size: 20px;
 }
 
 .nav-link {
@@ -48,9 +49,10 @@
 }
 
 #subtitle h3 {
-  font-size: 50px;
+  font-size: 60px;
   color: #DED9CE;
-  text-align: center;
+  text-align: left;
+  padding-left: 50px;
   font-family: "Viaoda Libre", serif;
 }
 
@@ -245,13 +247,12 @@
 
 #schedule-card-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card-deck {
-  display: flex;
-  flex-direction: row;
+.card-text {
+  color: #DED9CE;
 }
 
 .card {
@@ -492,9 +493,17 @@
   padding: 100px;
 }
 
+.contact-info {
+  color: #DED9CE;
+}
+
 #contact-block {
   height: 350px;
   width: 350px;
   background-color: rgba(125, 58, 34, 0.5);
   font-family: "Playfair Display", serif;
+}
+
+#footer-image {
+  height: 150px;
 }
