@@ -205,19 +205,20 @@
   background-attachment: fixed;
   padding: 50px;
 }
-
 #bio-block {
   height: 700px;
   width: 700px;
-  background-color: rgba(56, 26, 83, 0.75);
+  background-color: rgba(56, 26, 83, 0.85);
   color: #DED9CE; 
   text-align: center;
+  line-height: 2.5;
   padding: 50px;
 }
 
 .highlight {
   font-size: 1.5em; 
   font-weight: bold;
+  line-height: 1;
 }
 
 #bio-block h1 {
@@ -272,10 +273,7 @@
 
 
 #card-photo {
-  height: 200px;
-  width: 275px;
-  object-fit: cover; 
-  display: block;
+  object-fit: cover;
 }
 
 /* Quote block */
@@ -478,32 +476,10 @@
   width: 100%;
   height: 800px;
   background-color: #341846;
+  text-align: center;
 }
 
 #contact-me {
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
-}
-
-#contact-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 100px;
-}
-
-.contact-info {
-  color: #DED9CE;
-}
-
-#contact-block {
-  height: 350px;
-  width: 350px;
-  background-color: rgba(125, 58, 34, 0.5);
-  font-family: "Playfair Display", serif;
-}
-
-#footer-image {
-  height: 150px;
 }
