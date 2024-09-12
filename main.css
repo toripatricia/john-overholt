@@ -58,7 +58,7 @@
 
 #quote-block {
   height: 200px;
-  width: 700px;
+  width: 50%;
   background-color: rgba(125, 58, 34, 0.5); 
   margin-bottom: 25px;
   margin-top: 25px;
@@ -114,7 +114,7 @@
 
 #up-next-block {
   height: 300px;
-  width: 700px;
+  width: 50%;
   background-color: rgba(34, 50, 96, 0.5);
   margin-top: 15px;
 }
@@ -350,7 +350,7 @@
 
 #media {
   width: 100%;
-  height: 1000px;
+  height: 900px;
   background-image: url('assets/latrav2.jpg');
   background-attachment: fixed;
   background-position: right;
@@ -365,6 +365,7 @@
 }
 
 #media-block {
+  margin-top: 50px;
   height: 700px;
   width: 700px;
   background-color: rgba(34, 50, 96, 0.5);
@@ -446,40 +447,165 @@
 /* Voiceover */
 
 #voiceover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 800px;
   background-color: #0f1939;
 }
 
-#voiceover-content {
-  display: flex;
-  flex-direction: column;
-}
-
-#voiceover h1{
+#voiceover-header {
   padding-top: 25px;
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
   align-self: center;
 }
 
-#voiceover h3 {
-  padding-top: 25px;
+#voiceover-wrapper {
+  display: flex;
+  flex-direction: row; /* Align photo and text block side by side */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  width: 100%;
+  max-width: 1000px; /* Limit width if needed */
+}
+
+#voiceover-headshot {
+  width: 300px; 
+  height: 300px; 
+  overflow: hidden;
+}
+
+#voiceover-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#voiceover-block {
+  width: 700px;
+  background-color: #732B05;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  padding: 20px; 
+  margin-top: 20px;
+  font-family: Playfair Display;
   color: #DED9CE;
-  font-family: "Playfair Display", serif;
-  align-self: center;
+  margin-right: 25px;
+}
+
+#voiceover-video {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 560px; /* Ensure video fits within max width */
 }
 
 /* Contact */
 
 #contact {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   background-color: #341846;
-  text-align: center;
 }
 
 #contact-me {
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+#content-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  width: 100%; /* Ensure it takes full width if needed */
+}
+
+#contact-block {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  width: 500px;
+  background-color: #732B05;
+}
+
+#img-container {
+  width: 300px; 
+  height: 300px; 
+  overflow: hidden;
+}
+
+#contact-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30% right;
+}
+
+#name h1 {
+  font-family: Playfair Display;
+  color: #DED9CE;
+  margin-top: 30px;
+}
+
+#number h3 {
+  font-family: Playfair Display;
+  color: #DED9CE;
+}
+
+#email h3 {
+  font-family: Playfair Display;
+  color: #DED9CE;
+}
+
+#email a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+#email a:hover {
+  color: #666666; /* Optional: Change hover color */
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+#number, #email {
+  display: flex; /* Arrange icon and text horizontally */
+  align-items: center; /* Vertically center the icon and text */
+}
+
+#number h3, #email h3 {
+  margin-left: 10px; /* Add some space between the icon and the text */
+}
+
+#phone-icon, #email-icon {
+  width: 16px;
+  height: 16px;
+  color: #DED9CE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-icons {
+  display: flex;
+  flex-direction: row;
+  color:#DED9CE;
+  gap: 20px;
+}
+
+#footer-image {
+  height: 150px;
+  width: 150px;
+   margin-top: 40px;
 }
