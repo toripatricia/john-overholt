@@ -16,6 +16,7 @@
   align-items: center;
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
+  font-size: 20px;
 }
 
 .nav-link {
@@ -37,7 +38,6 @@
   background-position: center 25%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
 #title h1 {
@@ -49,45 +49,72 @@
 }
 
 #subtitle h3 {
-  font-size: 50px;
+  font-size: 60px;
   color: #DED9CE;
-  padding-left: 200px;
+  text-align: left;
+  padding-left: 50px;
   font-family: "Viaoda Libre", serif;
 }
 
 #quote-block {
-  height: 150px;
-  width: 700px;
+  height: 200px;
+  width: 50%;
   background-color: rgba(125, 58, 34, 0.5); 
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 #quote-container {
   height: 100px;
   width: 500px;
   padding-left: 100px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
+
+.styled-quote {
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 23px;
+    color: #DED9CE; 
+    padding: 25px;
+}
+
+.styled-quote::before,
+.styled-quote::after {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    color: #DED9CE; 
+    position: absolute;
+}
+
+.styled-quote::before {
+    content: open-quote;
+    top: -20px; 
+    left: -10px; 
+}
+
+.styled-quote::after {
+    content: close-quote;
+    bottom: -30px; 
+    right: -10px;
+}
+
 
 #quote-content {
   display: flex;
   flex-direction: column;
 }
 
-#quote {
-  color: #DED9CE;
-  padding-bottom: 10px;
-  font-family: "Playfair Display", serif; 
-}
-
 #source {
   color: #DED9CE;
   font-family: "Playfair Display", serif;
+  align-self: flex-end;
 }
 
 #up-next-block {
   height: 300px;
-  width: 700px;
+  width: 50%;
   background-color: rgba(34, 50, 96, 0.5);
   margin-top: 15px;
 }
@@ -96,6 +123,7 @@
   color: #DED9CE;
   margin-left: 15px;
   font-family: "Viaoda Libre", serif;
+  padding-top: 20px;
 }
 
 #up-next-contents {
@@ -107,11 +135,18 @@
 
 #left-side {
   padding-left: 10px;
+  padding-top: 15px;
   color: #DED9CE;
+  text-align: center;
+}
+
+#right-side {
+  text-align: center;
 }
 
 .caption {
   color: #DED9CE;
+  padding-top: 5px;
 }
 
 /* Resume block! */
@@ -136,7 +171,7 @@
   width: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 15%;
 }
 
 #block-container {
@@ -148,11 +183,14 @@
 }
 
 #resume-button {
-  height: 50px;
-  width: 200px;
+  height: 75px;
+  width: 250px;
   background-color: #732B05;
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
+  font-size: 23px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Biography! */
@@ -167,16 +205,25 @@
   background-attachment: fixed;
   padding: 50px;
 }
-
 #bio-block {
   height: 700px;
   width: 700px;
-  background-color: rgba(56, 26, 83, 0.75);
+  background-color: rgba(56, 26, 83, 0.85);
   color: #DED9CE; 
+  text-align: center;
+  line-height: 2.5;
+  padding: 50px;
+}
+
+.highlight {
+  font-size: 1.5em; 
+  font-weight: bold;
+  line-height: 1;
 }
 
 #bio-block h1 {
   font-family: "Viaoda Libre", serif;
+  padding-bottom: 20px;
 }
 
 #bio-block p {
@@ -201,34 +248,32 @@
 
 #schedule-card-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card-deck {
-  display: flex;
-  flex-direction: row;
+.card-text {
+  color: #DED9CE;
 }
 
 .card {
-  height: 420px;
-  width: 275px;
+  height: 200px;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: transparent;
   margin: 10px;
 }
 
 .card-body {
-  background-color: rgb(242, 236, 229);
-  opacity: 0.75;
+  color: #DED9CE;
+  font-family: "Playfair Display", serif;
 }
 
+
 #card-photo {
-  height: 200px;
-  width: 275px;
-  object-fit: cover; 
-  display: block;
+  object-fit: cover;
 }
 
 /* Quote block */
@@ -257,14 +302,43 @@
   height: 100%;
 }
 
-#quote-wrapper {
-  margin-left: 200px;
-  color: #DED9CE;
+.quote-wrapper {
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  padding: 40px; 
+  text-align: center;
 }
 
-#quote-two {
-  font-family: "Playfair Display", serif;
-  color: #DED9CE;
+.quote-two {
+  font-size: 60px; 
+  color: #DED9CE; 
+  display: inline-block;
+  position: relative;
+  z-index: 1; 
+  font-style: italic; 
+  padding: 0 20px;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.quote-two::before,
+.quote-two::after {
+    font-size: 100px; 
+    color: #fff; 
+    position: absolute;
+    top: -20px; 
+    font-family: 'Playfair Display', serif;
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.5); 
+}
+
+.quote-two::before {
+    content: open-quote; 
+    left: 10px; 
+}
+
+.quote-two::after {
+    content: close-quote; 
+    right: 20;
+    top: 60px;
 }
 
 #source-two {
@@ -276,7 +350,7 @@
 
 #media {
   width: 100%;
-  height: 1000px;
+  height: 900px;
   background-image: url('assets/latrav2.jpg');
   background-attachment: fixed;
   background-position: right;
@@ -288,22 +362,32 @@
 #media-container {
   display: flex;
   justify-content: flex-end;
-  padding: 50px;
 }
 
 #media-block {
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 50px;
   height: 700px;
   width: 700px;
   background-color: rgba(34, 50, 96, 0.5);
 }
 
-#media-block h1 {
+#media-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#media-content h1 {
   padding-top: 25px;
-  padding-right: 275px;
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
+  align-self: center;
+}
+
+#media-content h3 {
+  padding-top: 25px;
+  color: #DED9CE;
+  font-family: "Playfair Display", serif;
+  align-self: center;
 }
 
 
@@ -363,35 +447,165 @@
 /* Voiceover */
 
 #voiceover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 800px;
   background-color: #0f1939;
+}
+
+#voiceover-header {
+  padding-top: 25px;
+  color: #DED9CE;
+  font-family: "Viaoda Libre", serif;
+  align-self: center;
+}
+
+#voiceover-wrapper {
+  display: flex;
+  flex-direction: row; /* Align photo and text block side by side */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  width: 100%;
+  max-width: 1000px; /* Limit width if needed */
+}
+
+#voiceover-headshot {
+  width: 300px; 
+  height: 300px; 
+  overflow: hidden;
+}
+
+#voiceover-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#voiceover-block {
+  width: 700px;
+  background-color: #732B05;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  padding: 20px; 
+  margin-top: 20px;
+  font-family: Playfair Display;
+  color: #DED9CE;
+  margin-right: 25px;
+}
+
+#voiceover-video {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 560px; /* Ensure video fits within max width */
 }
 
 /* Contact */
 
 #contact {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   background-color: #341846;
 }
 
 #contact-me {
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
-#contact-page {
+#content-wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 100px;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  width: 100%; /* Ensure it takes full width if needed */
 }
 
 #contact-block {
-  height: 350px;
-  width: 350px;
-  background-color: rgba(125, 58, 34, 0.5);
-  font-family: "Playfair Display", serif;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  width: 500px;
+  background-color: #732B05;
+}
+
+#img-container {
+  width: 300px; 
+  height: 300px; 
+  overflow: hidden;
+}
+
+#contact-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30% right;
+}
+
+#name h1 {
+  font-family: Playfair Display;
+  color: #DED9CE;
+  margin-top: 30px;
+}
+
+#number h3 {
+  font-family: Playfair Display;
+  color: #DED9CE;
+}
+
+#email h3 {
+  font-family: Playfair Display;
+  color: #DED9CE;
+}
+
+#email a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}
+
+#email a:hover {
+  color: #666666; /* Optional: Change hover color */
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+#number, #email {
+  display: flex; /* Arrange icon and text horizontally */
+  align-items: center; /* Vertically center the icon and text */
+}
+
+#number h3, #email h3 {
+  margin-left: 10px; /* Add some space between the icon and the text */
+}
+
+#phone-icon, #email-icon {
+  width: 16px;
+  height: 16px;
+  color: #DED9CE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-icons {
+  display: flex;
+  flex-direction: row;
+  color:#DED9CE;
+  gap: 20px;
+}
+
+#footer-image {
+  height: 150px;
+  width: 150px;
+   margin-top: 40px;
 }
