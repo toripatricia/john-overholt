@@ -22,6 +22,17 @@
 .nav-link {
   text-decoration: none; /* Remove underline */
   color: inherit; /* Inherit color from parent */
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  transform: scale(1.05); 
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  font-weight: bold; /* Optional: to make the active link stand out more */
 }
 
 #logo-pic {
@@ -46,6 +57,7 @@
   padding-left: 50px;
   padding-top: 100px;
   font-family: "Viaoda Libre", serif;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 #subtitle h3 {
@@ -54,6 +66,7 @@
   text-align: left;
   padding-left: 50px;
   font-family: "Viaoda Libre", serif;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 #quote-block {
@@ -78,6 +91,7 @@
     font-size: 23px;
     color: #DED9CE; 
     padding: 25px;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 .styled-quote::before,
@@ -112,11 +126,25 @@
   align-self: flex-end;
 }
 
+#source a {
+  color: inherit;
+}
+
 #up-next-block {
-  height: 300px;
+  height: 335px;
   width: 50%;
   background-color: rgba(34, 50, 96, 0.5);
   margin-top: 15px;
+}
+
+#up-next-photo {
+  height: 250px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+#up-next-photo:hover {
+  transform: scale(1.05); 
 }
 
 #up-next {
@@ -129,8 +157,25 @@
 #up-next-contents {
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 15px;
   font-family: "Playfair Display", serif;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+#full-schedule {
+  height: 30px;
+  width: 250px;
+  color: #DED9CE;
+  background-color: #382c43;
+  margin: 10px;
+  border: 1px solid;
+  border-color: #111113;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+#full-schedule:hover {
+  transform: scale(1.05);
 }
 
 #left-side {
@@ -142,11 +187,13 @@
 
 #right-side {
   text-align: center;
+  padding: 20px;
 }
 
 .caption {
   color: #DED9CE;
   padding-top: 5px;
+  font-size: 12px;
 }
 
 /* Resume block! */
@@ -191,13 +238,18 @@
   font-size: 23px;
   border-radius: 8px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+#resume-button:hover {
+  transform: scale(1.05);
 }
 
 /* Biography! */
 
 #biography {
   width: 100%;
-  height: 800px;
+  height: 900px;
   background-image: url('assets/falstaff1.jpg');
   background-size: cover;
   background-position: right;
@@ -206,13 +258,17 @@
   padding: 50px;
 }
 #bio-block {
-  height: 700px;
+  height: 800px;
   width: 700px;
-  background-color: rgba(56, 26, 83, 0.85);
+  background-color: rgba(56, 26, 83, 0.9);
   color: #DED9CE; 
   text-align: center;
   line-height: 2.5;
   padding: 50px;
+}
+
+#bio-block p {
+  font-size: 14px;
 }
 
 .highlight {
@@ -224,6 +280,7 @@
 #bio-block h1 {
   font-family: "Viaoda Libre", serif;
   padding-bottom: 20px;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 #bio-block p {
@@ -232,13 +289,38 @@
 
 /* Schedule! */
 
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
 #schedule {
   width: 100%;
-  height: 800px;
+  height: 1200px;
   background-color: #0f1939;
 }
 
 #schedule-title h1 {
+  display: flex;
+  justify-content: center;
+  color: #DED9CE;
+  padding: 25px;
+  font-family: "Viaoda Libre", serif;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+#upcoming-events {
+  display: flex;
+  justify-content: center;
+  color: #DED9CE;
+  padding: 25px;
+  font-family: "Viaoda Libre", serif;
+}
+
+#recent-events {
   display: flex;
   justify-content: center;
   color: #DED9CE;
@@ -254,6 +336,11 @@
 
 .card-text {
   color: #DED9CE;
+  font-size: 12px;
+}
+
+.card-text a {
+  color: inherit;
 }
 
 .card {
@@ -273,7 +360,7 @@
 
 
 #card-photo {
-  object-fit: cover;
+  object-fit: fill;
 }
 
 /* Quote block */
@@ -346,6 +433,10 @@
   color: #DED9CE;
 }
 
+#source-two a {
+  color: inherit;
+}
+
 /* Media */
 
 #media {
@@ -381,6 +472,7 @@
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
   align-self: center;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 #media-content h3 {
@@ -408,6 +500,7 @@
   padding-top: 30px;
   font-family: "Viaoda Libre", serif;
   color: #DED9CE;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 #carousel-box {
@@ -427,21 +520,46 @@
 }
 
 #carousel {
-  width: 800px;
-  max-width: 100%; /* Makes the carousel responsive */
-  height: 600px;
-  max-height: 100%;
+  width: 100%; 
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
+.carousel-inner {
+  height: 100%; 
+}
+
+.carousel-item {
+  height: 100%; 
+  position: relative;
+}
+
 .carousel-item img {
-  max-width: 100%; /* Ensures images do not exceed container width */
-  max-height: 100%; /* Ensures images do not exceed container height */
   width: auto;
   height: auto;
+  object-fit: cover; 
+  object-position: center; 
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-indicators li {
+  background-color: #fff; /* Adjust color as needed */
+  border-radius: 50%;
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+}
+
+.carousel-indicators .active {
+  background-color: #000; /* Adjust color for the active indicator */
 }
 
 /* Voiceover */
@@ -460,6 +578,7 @@
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
   align-self: center;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 #voiceover-wrapper {
@@ -482,6 +601,7 @@
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #voiceover-block {
@@ -496,6 +616,7 @@
   font-family: Playfair Display;
   color: #DED9CE;
   margin-right: 25px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #voiceover-video {
@@ -504,6 +625,7 @@
   justify-content: center;
   width: 100%;
   max-width: 560px; /* Ensure video fits within max width */
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Contact */
@@ -520,6 +642,7 @@
   text-align: center;
   padding-top: 50px;
   padding-bottom: 30px;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 #content-wrapper {
@@ -551,12 +674,14 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: center 30% right;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #name h1 {
   font-family: Playfair Display;
   color: #DED9CE;
   margin-top: 30px;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 #number h3 {
