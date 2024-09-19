@@ -58,6 +58,7 @@
   padding-top: 100px;
   font-family: "Viaoda Libre", serif;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
 }
 
 #subtitle h3 {
@@ -67,6 +68,7 @@
   padding-left: 50px;
   font-family: "Viaoda Libre", serif;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
 }
 
 #quote-block {
@@ -79,10 +81,11 @@
 
 #quote-container {
   height: 100px;
-  width: 500px;
-  padding-left: 100px;
-  padding-top: 10px;
+  width: 80%; 
+  padding-left: 5%; 
+  padding-top: 1vw; 
 }
+
 
 .styled-quote {
     position: relative;
@@ -131,14 +134,14 @@
 }
 
 #up-next-block {
-  height: 335px;
+  height: auto;
   width: 50%;
   background-color: rgba(34, 50, 96, 0.5);
-  margin-top: 15px;
 }
 
 #up-next-photo {
-  height: 250px;
+  width: 100%;
+  height: auto;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
@@ -149,25 +152,25 @@
 
 #up-next {
   color: #DED9CE;
-  margin-left: 15px;
+  margin-left: 2vw;
   font-family: "Viaoda Libre", serif;
-  padding-top: 20px;
+  letter-spacing: 5px;
 }
 
 #up-next-contents {
   display: flex;
   flex-direction: row;
-  padding: 15px;
   font-family: "Playfair Display", serif;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 #full-schedule {
-  height: 30px;
-  width: 250px;
+  height: auto; /* Let height adjust */
+  width: 100%; /* Make button width responsive */
+  max-width: 250px; /* Set a max width to prevent it from stretching too far */
   color: #DED9CE;
   background-color: #382c43;
-  margin: 10px;
+  margin: 10px auto; /* Center the button and give margin */
   border: 1px solid;
   border-color: #111113;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
@@ -179,21 +182,23 @@
 }
 
 #left-side {
-  padding-left: 10px;
-  padding-top: 15px;
+  padding-left: 2vw; /* Responsive padding */
+  padding-top: 2vw; /* Responsive padding */
   color: #DED9CE;
   text-align: center;
+  width: 100%; /* Take full width on smaller screens */
 }
 
 #right-side {
   text-align: center;
-  padding: 20px;
+  padding: 2vw; /* Responsive padding */
+  width: 100%; /* Take full width on smaller screens */
 }
 
 .caption {
   color: #DED9CE;
-  padding-top: 5px;
-  font-size: 12px;
+  padding-top: 1vw; /* Responsive padding */
+  font-size: 1vw; /* Responsive font size */
 }
 
 /* Resume block! */
@@ -281,6 +286,7 @@
   font-family: "Viaoda Libre", serif;
   padding-bottom: 20px;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
 }
 
 #bio-block p {
@@ -310,6 +316,7 @@
   padding: 25px;
   font-family: "Viaoda Libre", serif;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;;
 }
 
 #upcoming-events {
@@ -473,6 +480,7 @@
   font-family: "Viaoda Libre", serif;
   align-self: center;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
 }
 
 #media-content h3 {
@@ -501,6 +509,7 @@
   font-family: "Viaoda Libre", serif;
   color: #DED9CE;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
 }
 
 #carousel-box {
@@ -579,6 +588,7 @@
   font-family: "Viaoda Libre", serif;
   align-self: center;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
 }
 
 #voiceover-wrapper {
@@ -643,6 +653,7 @@
   padding-top: 50px;
   padding-bottom: 30px;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 5px;
 }
 
 #content-wrapper {
@@ -733,4 +744,12 @@
   height: 150px;
   width: 150px;
    margin-top: 40px;
+}
+
+#facebook {
+  color: #DED9CE;
+}
+
+#instagram {
+  color: #DED9CE;
 }
