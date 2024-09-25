@@ -784,46 +784,46 @@
 
   #quote-block {
     width: 90%;
-    margin: 20px auto; /* Center the block and reduce margin */
+    margin: 20px auto; 
   }
 
   #up-next-block {
     width: 90%;
-    margin: 20px auto; /* Center the block */
+    margin: 20px auto; 
   }
 
   #up-next-contents {
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
     text-align: center;
   }
 
   #left-side {
     padding: 10px;
-    width: 100%; /* Full width on mobile */
+    width: 100%; 
   }
 
   #right-side {
     padding: 10px;
-    width: 100%; /* Full width on mobile */
+    width: 100%; 
   }
 
   #up-next-photo {
-    max-width: 50%; /* Ensure image doesn't overflow */
-    height: auto; /* Keep aspect ratio */
+    max-width: 50%; 
+    height: auto; 
     margin: 0 auto; 
   }
 
   .caption {
-    font-size: 12px; /* Smaller, more readable font */
+    font-size: 12px;
   }
 
   #full-schedule {
-    max-width: 90%; /* Ensure button width is reasonable on small screens */
+    max-width: 90%; 
     margin: 20px auto;
   }
 
   #nav-items {
-    display: none; /* Hide regular nav items */
+    display: none; 
   }
 }
 
@@ -831,9 +831,9 @@
 
 @media (max-width: 480px) {
   #title h1 {
-    font-size: 40px;
+    font-size: 50vh;
     padding-left: 20px;
-    padding-top: 50px;
+    padding-top: 70px;
     text-align: center;
   }
 
@@ -845,12 +845,13 @@
 
   #quote-block {
     width: 90%;
-    height: auto;
-    margin: 20px auto; /* Center the block and reduce margin */
+    height: fit-content;
+    margin: 20px auto; 
   }
 
   #up-next-block {
     width: 90%;
+    height: fit-content;
     margin: 20px auto; /* Center the block */
   }
 
@@ -915,7 +916,7 @@
   #resume-button {
     height: 50px; /* Adjust button height for mobile */
     width: 180px; /* Adjust button width for mobile */
-    font-size: 5px; /* Adjust font size for mobile */
+    font-size: 15px; /* Adjust font size for mobile */
     margin: 20px 0;
     box-sizing: border-box; /* Include padding/border in the button size */
     /* Ensure flex items can shrink if inside a flex container */
