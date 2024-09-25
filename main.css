@@ -831,7 +831,7 @@
 
 @media (max-width: 480px) {
   #title h1 {
-    font-size: 50vh;
+    font-size: 20px;
     padding-left: 20px;
     padding-top: 70px;
     text-align: center;
@@ -847,6 +847,10 @@
     width: 90%;
     height: fit-content;
     margin: 20px auto; 
+  }
+
+  #quote-container {
+    height: fit-content;
   }
 
   #up-next-block {
@@ -918,8 +922,15 @@
     width: 180px; /* Adjust button width for mobile */
     font-size: 15px; /* Adjust font size for mobile */
     margin: 20px 0;
-    box-sizing: border-box; /* Include padding/border in the button size */
-    /* Ensure flex items can shrink if inside a flex container */
+    flex-shrink: 1;
+  }
+
+  /* BIO MOBILE*/
+
+  #bio-block {
+    width: 90%;
+    height: fit-content;
+    margin: 20px auto; /* Center the block */
     flex-shrink: 1;
   }
 
