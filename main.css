@@ -268,8 +268,8 @@
   padding: 50px;
 }
 #bio-block {
-  height: 800px;
-  width: 700px;
+  height: fit-content;
+  width: 55vw;
   background-color: rgba(56, 26, 83, 0.9);
   color: #DED9CE; 
   text-align: center;
@@ -278,7 +278,7 @@
 }
 
 #bio-block p {
-  font-size: 14px;
+  font-size: 1.2vw;
 }
 
 .highlight {
@@ -928,10 +928,9 @@
   /* BIO MOBILE*/
 
   #bio-block {
-    width: 90%;
+    width: 100%;
     height: fit-content;
-    margin: 20px auto; /* Center the block */
-    flex-shrink: 1;
+    margin: 5px auto; 
   }
 
 }
