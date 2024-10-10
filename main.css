@@ -769,6 +769,11 @@
 /* HOME TABLET */
 
 @media (max-width: 768px) {
+
+  #home {
+    background-color: #000;
+  }
+
   #title h1 {
     font-size: 40px;
     padding-left: 20px;
@@ -830,6 +835,11 @@
 /* HOME PHONE */
 
 @media (max-width: 480px) {
+
+  #home {
+    background-color: #000;
+  }
+
   #title h1 {
     font-size: 20px;
     padding-left: 20px;
@@ -847,10 +857,16 @@
     width: 90%;
     height: fit-content;
     margin: 20px auto; 
+    padding: 10px;
   }
 
   #quote-container {
     height: fit-content;
+  }
+
+  #up-next h1 {
+    display: flex;
+    justify-content: center;
   }
 
   #up-next-block {
@@ -918,7 +934,7 @@
   }
 
   #resume-button {
-    height: 50px; /* Adjust button height for mobile */
+    height: 30px; /* Adjust button height for mobile */
     width: 180px; /* Adjust button width for mobile */
     font-size: 15px; /* Adjust font size for mobile */
     margin: 20px 0;
@@ -927,16 +943,34 @@
 
   /* BIO MOBILE*/
 
+  #biography {
+    background-color: #000;
+    width: 100%;
+    height: fit-content;
+  }
+
   #bio-block {
     width: 100%;
     height: fit-content;
     margin: 5px auto; 
   }
 
+  .highlight {
+    font-weight: bold;
+    font-size: 1.2vw;
+  }
+
    /* SCHEDULE MOBILE*/
 
    /* Ensure horizontal layout on larger screens and vertical on mobile */
 @media (max-width: 480px) {
+
+  #schedule {
+  width: 100%;
+  height: fit-content;
+  background-color: #0f1939;
+}
+
   .card {
     max-width: 350px;
     height: auto;
