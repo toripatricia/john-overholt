@@ -766,75 +766,9 @@
 
 
 
-/* HOME TABLET */
-
-@media (max-width: 768px) {
-
-  #home {
-    background-color: #000;
-  }
-
-  #title h1 {
-    font-size: 40px;
-    padding-left: 20px;
-    padding-top: 50px;
-    text-align: center;
-  }
-
-  #subtitle h3 {
-    font-size: 30px;
-    text-align: center;
-    padding-left: 0;
-  }
-
-  #quote-block {
-    width: 90%;
-    margin: 20px auto; 
-  }
-
-  #up-next-block {
-    width: 90%;
-    margin: 20px auto; 
-  }
-
-  #up-next-contents {
-    flex-direction: column; 
-    text-align: center;
-  }
-
-  #left-side {
-    padding: 10px;
-    width: 100%; 
-  }
-
-  #right-side {
-    padding: 10px;
-    width: 100%; 
-  }
-
-  #up-next-photo {
-    max-width: 50%; 
-    height: auto; 
-    margin: 0 auto; 
-  }
-
-  .caption {
-    font-size: 12px;
-  }
-
-  #full-schedule {
-    max-width: 90%; 
-    margin: 20px auto;
-  }
-
-  #nav-items {
-    display: none; 
-  }
-}
-
 /* HOME PHONE */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
   #home {
     background-color: #000;
@@ -1038,6 +972,10 @@
      padding: 10px;
   }
 
+  #quote-image-container {
+    margin-left: 0px;
+  }
+
    /* VOICEOVER MOBILE */
 
    #voiceover {
@@ -1051,6 +989,11 @@
    #voiceover-block {
     width: fit-content;
     height: fit-content;
+   }
+
+   #voiceover-wrapper {
+    height: fit-content;
+    display: flex;
    }
 
 } 
