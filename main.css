@@ -933,4 +933,68 @@
     margin: 5px auto; 
   }
 
+   /* SCHEDULE MOBILE*/
+
+   /* Ensure horizontal layout on larger screens and vertical on mobile */
+@media (max-width: 480px) {
+  .card {
+    max-width: 350px;
+    height: auto;
+  }
+
+  .card .row {
+    flex-direction: column;
+  }
+
+  .card .col-12 {
+    margin-bottom: 10px;
+  }
+
+  #card-photo {
+    width: 100%;  /* Ensure the image takes up full width */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 300px; /* Prevent the image from becoming too large */
+    margin: 0 auto; /* Center the image */
+  }
+
+  /* For all screens - make sure images don’t stretch larger than their container */
+#card-photo {
+  object-fit: cover; /* Maintain the image aspect ratio without distortion */
+  max-width: 100%;   /* Make sure the image fits within its container */
+  height: auto;      /* Maintain the aspect ratio */
 }
+
+.card-body {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .card-title {
+    font-size: 18px; /* Shrink title font */
+  }
+
+  .card-text {
+    font-size: 12px; /* Adjust the font size for smaller screens */
+    line-height: 1.2; /* Adjust line height to fit more content in less space */
+  }
+
+}
+
+  /* GALLERY MOBILE*/
+
+  @media (max-width: 768px) {
+  #carousel-box {
+    width: 100%;  /* Make the carousel-box full width on mobile */
+    height: auto; /* Allow the height to adjust automatically */
+  }
+
+  .carousel-item img {
+    width: 100%;  /* Ensure the image shrinks to fit the screen */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .carousel-item {
+    height: auto; /* Let the carousel-item adjust height automatically */
+  }
+
+}
+} 
