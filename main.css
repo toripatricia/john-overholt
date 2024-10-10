@@ -938,7 +938,6 @@
     width: 180px; /* Adjust button width for mobile */
     font-size: 15px; /* Adjust font size for mobile */
     margin: 20px 0;
-    flex-shrink: 1;
   }
 
   /* BIO MOBILE*/
@@ -955,15 +954,18 @@
     margin: 5px auto; 
   }
 
+  #bio-block p {
+    font-size: 1.5vw;
+  }
+
   .highlight {
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
   }
 
    /* SCHEDULE MOBILE*/
 
    /* Ensure horizontal layout on larger screens and vertical on mobile */
-@media (max-width: 480px) {
 
   #schedule {
   width: 100%;
@@ -1011,11 +1013,8 @@
     line-height: 1.2; /* Adjust line height to fit more content in less space */
   }
 
-}
-
   /* GALLERY MOBILE*/
 
-  @media (max-width: 768px) {
   #carousel-box {
     width: 100%;  /* Make the carousel-box full width on mobile */
     height: auto; /* Allow the height to adjust automatically */
@@ -1030,5 +1029,24 @@
     height: auto; /* Let the carousel-item adjust height automatically */
   }
 
-}
+  /* QUOTE IMAGE MOBILE */
+
+  #quote-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+  }
+
+   /* VOICEOVER MOBILE */
+
+   #voiceover-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+   }
+
 } 
