@@ -887,21 +887,21 @@
 
   #right-side {
     padding: 10px;
-    width: 100%; /* Full width on mobile */
+    width: 100%; 
   }
 
   #up-next-photo {
-    max-width: 50%; /* Ensure image doesn't overflow */
-    height: auto; /* Keep aspect ratio */
+    max-width: 50%; 
+    height: auto; 
     margin: 0 auto; 
   }
 
   .caption {
-    font-size: 12px; /* Smaller, more readable font */
+    font-size: 12px;
   }
 
   #full-schedule {
-    max-width: 90%; /* Ensure button width is reasonable on small screens */
+    max-width: 90%; 
     margin: 20px auto;
   }
 
@@ -912,31 +912,31 @@
   /* RESUME BLOCK PHONE*/
 
   #resume-block {
-    height: auto; /* Allow block height to adjust based on content */
-    padding: 20px; /* Adjust padding if needed */
+    height: auto;
+    padding: 20px; 
   }
 
   #block-container {
-    flex-direction: column; /* Stack items vertically on mobile */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text within the block */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
   }
 
   #headshot-container {
-    width: 200px; /* Adjust size for smaller screens */
-    height: 200px; /* Adjust size for smaller screens */
-    margin-bottom: 20px; /* Add spacing between image and button */
+    width: 200px; 
+    height: 200px;
+    margin-bottom: 20px; 
     flex-shrink: 0; 
   }
 
   #john-one {
-    object-position: center; /* Center image */
+    object-position: center; 
   }
 
   #resume-button {
-    height: 30px; /* Adjust button height for mobile */
-    width: 180px; /* Adjust button width for mobile */
-    font-size: 15px; /* Adjust font size for mobile */
+    height: 30px; 
+    width: 180px; 
+    font-size: 15px; 
     margin: 20px 0;
   }
 
@@ -955,17 +955,15 @@
   }
 
   #bio-block p {
-    font-size: 1.5vw;
+    font-size: 3vw;
   }
 
   .highlight {
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 3vw;
   }
 
    /* SCHEDULE MOBILE*/
-
-   /* Ensure horizontal layout on larger screens and vertical on mobile */
 
   #schedule {
   width: 100%;
@@ -987,42 +985,42 @@
   }
 
   #card-photo {
-    width: 100%;  /* Ensure the image takes up full width */
-    height: auto; /* Maintain the aspect ratio */
-    max-width: 300px; /* Prevent the image from becoming too large */
-    margin: 0 auto; /* Center the image */
+    width: 100%;  
+    height: auto; 
+    max-width: 300px;
+    margin: 0 auto; 
   }
 
-  /* For all screens - make sure images don’t stretch larger than their container */
+
 #card-photo {
-  object-fit: cover; /* Maintain the image aspect ratio without distortion */
-  max-width: 100%;   /* Make sure the image fits within its container */
-  height: auto;      /* Maintain the aspect ratio */
+  object-fit: cover;
+  max-width: 100%;   
+  height: auto; 
+
 }
 
 .card-body {
-    padding: 10px; /* Reduce padding */
+    padding: 10px; 
   }
 
   .card-title {
-    font-size: 18px; /* Shrink title font */
+    font-size: 18px; 
   }
 
   .card-text {
-    font-size: 12px; /* Adjust the font size for smaller screens */
-    line-height: 1.2; /* Adjust line height to fit more content in less space */
+    font-size: 12px; 
+    line-height: 1.2; 
   }
 
   /* GALLERY MOBILE*/
 
   #carousel-box {
-    width: 100%;  /* Make the carousel-box full width on mobile */
-    height: auto; /* Allow the height to adjust automatically */
-  }
+    width: 100%;  
+    height: auto;
 
   .carousel-item img {
-    width: 100%;  /* Ensure the image shrinks to fit the screen */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;  
+    height: auto; 
   }
 
   .carousel-item {
@@ -1030,6 +1028,11 @@
   }
 
   /* QUOTE IMAGE MOBILE */
+
+  #quote-block-two {
+    width: 100vw;
+    height: fit-content;
+  }
 
   #quote-image-container {
     display: flex;
@@ -1041,6 +1044,11 @@
 
    /* VOICEOVER MOBILE */
 
+   #voiceover {
+    width: 100vw;
+    height: fit-content
+   }
+
    #voiceover-wrapper {
     display: flex;
     flex-direction: column;
@@ -1050,3 +1058,4 @@
    }
 
 } 
+}
