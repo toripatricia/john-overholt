@@ -1017,6 +1017,7 @@
   #carousel-box {
     width: 100%;  
     height: auto;
+  }
 
   .carousel-item img {
     width: 100%;  
@@ -1032,30 +1033,24 @@
   #quote-block-two {
     width: 100vw;
     height: fit-content;
-  }
-
-  #quote-image-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: fit-content;
-    padding: 10px;
+     padding: 10px;
   }
 
    /* VOICEOVER MOBILE */
 
    #voiceover {
     width: 100vw;
-    height: fit-content
-   }
-
-   #voiceover-wrapper {
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: fit-content;
     padding: 10px;
    }
 
+   #voiceover-block {
+    width: fit-content;
+    height: fit-content;
+   }
+
 } 
-}
