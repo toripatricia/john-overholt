@@ -1,5 +1,17 @@
 /* Navbar! */
 
+.reveal {
+    opacity: 0;
+    transform: translateY(30px); /* Move element down slightly */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 #navbar {
   height: 75px;
   width: 100vw;
@@ -136,7 +148,7 @@
 #up-next-block {
   height: auto;
   width: 50%;
-  background-color: rgba(34, 50, 96, 0.5);
+  background-color: rgba(34, 50, 96, 0.5)
 }
 
 #up-next-photo {
@@ -175,6 +187,8 @@
   border-color: #111113;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 #full-schedule:hover {
@@ -257,7 +271,7 @@
 
 #biography {
   width: 100%;
-  height: 900px;
+  height: fit-content;
   background-image: url('assets/falstaff1.jpg');
   background-size: cover;
   background-position: right;
@@ -378,6 +392,7 @@
 #quote-block-two {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   height: 400px;
   width: 100%;
   background-color: #341846;
@@ -401,41 +416,12 @@
 
 .quote-wrapper {
   position: relative;
-  font-family: 'Playfair Display', serif;
-  padding: 40px; 
   text-align: center;
 }
 
-.quote-two {
-  font-size: 60px; 
-  color: #DED9CE; 
-  display: inline-block;
-  position: relative;
-  z-index: 1; 
-  font-style: italic; 
-  padding: 0 20px;
-  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
-}
-
-.quote-two::before,
-.quote-two::after {
-    font-size: 100px; 
-    color: #fff; 
-    position: absolute;
-    top: -20px; 
-    font-family: 'Playfair Display', serif;
-    text-shadow: 3px 3px 2px rgba(0,0,0,0.5); 
-}
-
-.quote-two::before {
-    content: open-quote; 
-    left: 10px; 
-}
-
-.quote-two::after {
-    content: close-quote; 
-    right: 20px;
-    top: 60px;
+.quote-wrapper img {
+  max-width: 30rem;
+  padding-top: 4rem;
 }
 
 #source-two {
@@ -450,47 +436,60 @@
 /* Media */
 
 #media {
-  width: 100%;
-  height: 900px;
+  height: fit-content;
   background-image: url('assets/latrav2.jpg');
   background-attachment: fixed;
   background-position: right;
   background-size: cover;
-  z-index: 0; /* Background layer */
-
 }
 
 #media-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 400px 400px 400px;
+  gap: 10px;
+  padding: 1rem;
+  z-index: 1;
+}
+
+#media-header {
   display: flex;
-  justify-content: flex-end;
-}
-
-#media-block {
-  margin-top: 50px;
-  height: 700px;
-  width: 700px;
-  background-color: rgba(34, 50, 96, 0.5);
-}
-
-#media-content {
-  display: flex;
-  flex-direction: column;
-}
-
-#media-content h1 {
-  padding-top: 25px;
+  justify-content: center;
+  padding: 3rem;
   color: #DED9CE;
   font-family: "Viaoda Libre", serif;
-  align-self: center;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 5px;
+  z-index: 1;
+  position: relative;
 }
 
-#media-content h3 {
-  padding-top: 25px;
-  color: #DED9CE;
-  font-family: "Playfair Display", serif;
-  align-self: center;
+.video-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.video-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Ensures it doesn't interfere with clicking the video */
+}
+
+.video-container:hover .video-caption {
+    opacity: 1;
 }
 
 
@@ -747,7 +746,8 @@
 #footer-image {
   height: 150px;
   width: 150px;
-   margin-top: 40px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 #facebook {
@@ -766,6 +766,14 @@
 
 #instagram:hover {
   transform: scale(1.5); 
+}
+
+#footer-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color:#DED9CE;
+  font-size: 10px;
 }
 
 
@@ -791,13 +799,13 @@
   }
 
   #title h1 {
-    font-size: 30px;
+    font-size: 3rem;
     padding-top: 11vw;
     text-align: center;
   }
 
   #subtitle h3 {
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
     padding-left: 0;
   }
@@ -821,7 +829,7 @@
   #up-next-block {
     width: 90%;
     height: fit-content;
-    margin: 20px auto; /* Center the block */
+    margin:  auto; /* Center the block */
   }
 
   #up-next-contents {
@@ -852,6 +860,7 @@
   #full-schedule {
     max-width: 90%; 
     margin: 20px auto;
+    font-size: 1.25rem;
   }
   /* RESUME BLOCK PHONE*/
 
@@ -894,9 +903,10 @@
   }
 
   #bio-block {
-    width: 95%;
+    width: 100%;
     height: fit-content;
     padding: 2vw;
+    margin: auto;
   }
 
   #bio-block p {
@@ -931,9 +941,10 @@
 
   #card-photo {
     width: 100%;  
-    height: auto; 
+    height: 100%; 
     max-width: 300px;
     margin: 0 auto; 
+    object-fit: cover;
   }
 
 
@@ -991,12 +1002,6 @@
     margin-left: 0px;
   }
 
-  .quote-two::after {
-    content: close-quote; 
-    right: 10;
-    top: 60px;
-}
-
    /* VOICEOVER MOBILE */
 
    #voiceover {
@@ -1005,12 +1010,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3vw;
+    padding: 3rem;
    }
 
    #voiceover-header {
-    padding-bottom: 2vw;
+    padding-bottom: 2rem;
    }
+
+    #voiceover-header h1 {
+      font-size: 3rem;
+    }
 
    #voiceover-block {
     width: fit-content;
@@ -1023,5 +1032,24 @@
     height: fit-content;
     display: flex;
    }
+
+   /*media mobile*/
+
+   #media-container {
+    display: flex;
+    flex-direction: column;
+   }
+
+  .video-container iframe {
+    width: 100%;
+  }
+
+  #media-header h1 {
+    font-size: 3rem;
+  }
+
+  #contact-me h1 {
+    font-size: 3rem;
+  }
 
 } 
