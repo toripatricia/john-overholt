@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>John Overholt, Tenor</title>
+  <link rel="icon" type="image/png" href="assets/jologo.png">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -17,7 +18,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Viaoda+Libre&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
     rel="stylesheet">
 
 </head>
@@ -27,6 +29,12 @@
   <!-- Navbar -->
 
   <div id="navbar">
+
+    <button id="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-items">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
     <div id="nav-items">
       <a href="#biography" class="nav-link">
@@ -41,8 +49,8 @@
         <div class="gallery-link">GALLERY</div>
       </a>
 
-      <a href="#home">
-        <div id="logo"> <img id="logo-pic" src="assets/OVERHOLTlogo.png"> </div>
+      <a href="#home" class="nav-logo">
+        <div id="logo"> <img id="logo-pic" src="assets/jologo.png" alt="John Overholt"> </div>
       </a>
 
       <a href="#media" class="nav-link">
@@ -67,19 +75,19 @@
 
   <div id="home">
 
-    <div id="title" class="reveal">
-      <h1>JOHN OVERHOLT</h1>
+    <div id="title">
+      <h1 data-split data-base="0.5" data-step="0.07">JOHN OVERHOLT</h1>
     </div>
 
-    <div id="subtitle" class="reveal">
-      <h3>TENOR</h3>
+    <div id="subtitle">
+      <h3 data-split data-base="1.9" data-step="0.12">TENOR</h3>
     </div>
 
 
-    <div id="quote-block">
+    <div id="quote-block" class="intro-fade">
       <div id="quote-container">
         <div id="quote-content">
-          <div id="quote" class="reveal">
+          <div id="quote">
             <div class="styled-quote">
               ...Alfredo’s friend, Gastone de Letoriéres, was given a major presence by tenor John Overholt...
             </div>
@@ -93,12 +101,12 @@
       </div>
     </div>
 
-    <div id="up-next">
+    <div id="up-next" class="intro-fade">
       <h1>UPCOMING ENGAGEMENTS</h1>
     </div>
 
-    <div id="up-next-block">
-      <div id="up-next-contents" class="reveal">
+    <div id="up-next-block" class="intro-fade">
+      <div id="up-next-contents">
         <div id="left-side">
           <h3 style="font-style: italic;">THE LIGHTER SIDE OF BEETHOVEN</h3>
           <h5>SOLOIST</h5>
@@ -110,9 +118,7 @@
         </div>
 
         <div id="right-side">
-          <a href="https://www.eventbrite.com/e/cathedral-concert-amadeus-concert-ensemble-tickets-1203642710749"
-            target="_blank" rel="noopener noreferrer"><img id="up-next-photo" src="assets/beethoven.png"></a>
-          <p class="caption">Click the image above for info+tickets!</p>
+          <img id="up-next-photo" src="assets/beethoven.png">
         </div>
       </div>
     </div>
@@ -123,13 +129,13 @@
   <div id="resume-block">
     <div id="block-container">
 
-      <div id="headshot-container" class="reveal">
+      <div id="headshot-container" class="reveal" data-anim="tilt">
         <img id="john-one" src="/assets/john1.jpg">
       </div>
 
       <a href="https://drive.google.com/file/d/1hwob3j4vpiOvmyQT4Af2JW_axU7RWAuD/view?usp=sharing"
         download="john-overholt-resume.pdf" target="_blank">
-        <button id="resume-button" class="reveal">DOWNLOAD RESUME</button>
+        <button id="resume-button" class="reveal" data-anim="zoom">DOWNLOAD RESUME</button>
       </a>
 
     </div>
@@ -176,13 +182,13 @@
 
   <div id="schedule">
 
-    <div id="schedule-title" class="reveal">
+    <div id="schedule-title" class="reveal" data-anim="wipe">
       <h1>SCHEDULE</h1>
     </div>
 
     <div id="schedule-card-container">
 
-      <div id="upcoming-events" class="reveal">
+      <div id="upcoming-events" class="reveal" data-anim="drop">
         <h2>UPCOMING EVENTS</h2>
       </div>
 
@@ -235,7 +241,7 @@
         </div>
       </div>
 
-      <div id="recent-events" class="reveal">
+      <div id="recent-events" class="reveal" data-anim="drop">
         <h2>RECENT ENGAGEMENTS</h2>
       </div>
 
@@ -290,11 +296,11 @@
   <!-- Gallery -->
 
   <div id="gallery">
-    <div id="gallery-title" class="reveal">
+    <div id="gallery-title" class="reveal" data-anim="wipe">
       <h1>GALLERY</h1>
     </div>
 
-    <div id="carousel-box" class="reveal">
+    <div id="carousel-box" class="reveal" data-anim="zoom">
       <div id="carousel-container">
         <div id="carousel">
           <div class="bd-example">
@@ -492,11 +498,11 @@
   <div id="quote-block-two">
 
     <div id="quote-image-container">
-      <img id="quote-image" src="assets/falstaff2.jpg" class="reveal">
+      <img id="quote-image" src="assets/falstaff2.jpg" class="reveal" data-anim="left">
     </div>
 
     <div class="quote-wrapper">
-      <img class="reveal" src="/assets/overholtquote.png">
+      <img class="reveal" data-anim="right" src="/assets/overholtquote.png">
 
       <div id="source-two" class="reveal">
         <p>Janelle Gelfand, <a href="">Cincinnati Enquirer</a></p>
@@ -510,13 +516,13 @@
 
   <div id="media">
 
-    <div id="media-header" class="reveal">
+    <div id="media-header" class="reveal" data-anim="wipe">
       <h1>MEDIA</h1>
     </div>
 
 
 
-    <div id="media-container" class="reveal">
+    <div id="media-container">
 
       <div class="video-container">
         <div class="video-caption">
@@ -604,11 +610,11 @@
 
   <div id="voiceover">
 
-    <div id="voiceover-header" class="reveal">
+    <div id="voiceover-header" class="reveal" data-anim="wipe">
       <h1>VOICEOVER</h1>
     </div>
 
-    <div id="voiceover-headshot" class="reveal">
+    <div id="voiceover-headshot" class="reveal" data-anim="tilt">
       <img id="voiceover-img" src="assets/voiceoverheadshot.jpg">
     </div>
 
@@ -638,11 +644,11 @@
 
   <div id="contact">
 
-    <div id="contact-me" class="reveal">
+    <div id="contact-me" class="reveal" data-anim="wipe">
       <h1>CONTACT ME</h1>
     </div>
 
-    <div id="content-wrapper" class="reveal">
+    <div id="content-wrapper" class="reveal" data-anim="zoom">
       <div id="contact-block">
         <div id="img-container">
           <img id="contact-photo" src="assets/john2.jpg">
@@ -689,8 +695,8 @@
         </div>
       </div>
 
-      <div id="footer-logo" class="reveal">
-        <img id="footer-image" src="assets/OVERHOLT purple2.png">
+      <div id="footer-logo">
+        <img id="footer-image" src="assets/jologo.png" alt="John Overholt">
       </div>
     </div>
 
